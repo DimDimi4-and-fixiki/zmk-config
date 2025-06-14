@@ -32,10 +32,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T           &kp Y                       &kp U     &kp I      &kp O    &kp P     &kp LEFT_BRACKET
-&kp TAB     &kp A  &kp S  &kp D     &kp F  &kp G           &kp H                       &kp J     &kp K      &kp L    &kp SEMI  &lt 1 SQT
-&kp LSHFT   &kp Z  &kp X  &kp C     &kp V  &kp B           &kp N                       &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                          &kp LGUI  &mo 1  &tp LALT RET    &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC  &mo 2
+&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y                       &kp U     &kp I      &kp O    &kp P     &kp LEFT_BRACKET
+&kp TAB     &kp A  &kp S  &kp D     &kp F  &kp G             &kp H                       &kp J     &kp K      &kp L    &kp SEMI  &lt 1 SQT
+&kp LSHFT   &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N                       &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp LC(SPACE)
+                          &kp LGUI  &mo 1  &tp LALT SPACE    &tp LC(LS(LA(LGUI))) ENTER  &kp BSPC  &mo 2
             >;
         };
 
@@ -47,8 +47,8 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&kp LG(SPACE)  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET                   &kp AMPS           &kp KP_MULTIPLY  &kp PLUS           &kp MINUS         &kp EQUAL
-&kp LG(GRAVE)  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5          &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp COLON        &kp SEMICOLON      &kp RBKT          &kp PIPE
+&kp LC(SPACE)  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET                   &kp AMPS           &kp KP_MULTIPLY  &kp PLUS           &kp MINUS         &kp EQUAL
+&kp LG(GRAVE)  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5          &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp COLON        &kp SEMICOLON      &kp UNDERSCORE    &kp PIPE
 &kp LC(TAB)    &kp N6    &kp N7  &kp N8    &kp N9    &kp N0          &kp LEFT_BRACE              &kp RIGHT_BRACE    &kp TILDE        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp RSHFT
                                  &kp LGUI  &trans    &tp LALT RET    &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC           &trans
             >;
@@ -62,10 +62,10 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans       &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp F3            &kp F4            &kp F5              &kp F6     &kp F7          &kp F8    &kp C_MUTE  &kp C_VOL_DN        &kp C_VOL_UP
-&kp LC(TAB)  &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp PG_UP  &kp LEFT_ARROW  &kp UP    &kp RIGHT   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)
-&bt BT_CLR   &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4        &kp PG_DN  &trans          &kp DOWN  &trans      &kp LS(LG(LEFT))    &kp LS(LG(RIGHT))
-                                                         &trans            &trans            &trans              &trans     &trans          &trans
+&trans       &kp C_BRI_DEC     &kp C_BRI_INC     &kp F3            &kp F4            &kp F5              &kp F6     &kp F7          &kp F8              &kp C_MUTE           &kp C_VOL_DN        &kp C_VOL_UP
+&kp LC(TAB)  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp PG_UP  &kp UP_ARROW    &kp LEFT_ARROW      &kp RIGHT            &kp LG(LEFT_ARROW)  &kp LG(RIGHT)
+&bt BT_CLR   &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4        &kp PG_DN  &kp DOWN_ARROW  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LS(LG(LEFT))    &kp LS(LG(RIGHT))
+                                                 &kp LEFT_SHIFT    &trans            &trans              &trans     &trans          &trans
             >;
         };
     };
